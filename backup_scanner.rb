@@ -10,7 +10,7 @@ class MetasploitModule < Msf::Auxiliary
     super(
       'Name'        => 'Subdomain Backup File Brute Force Scanner',
       'Description' => 'This module attempts to find backup files on a list of subdomains via brute force, with improved false-positive detection.',
-      'Author'      => ['Parag Bagul'],
+      'Author'      => ['Parag Bagul'],  # Updated author name
       'License'     => MSF_LICENSE
     )
 
