@@ -50,12 +50,12 @@ msf6 auxiliary(scanner/http/backup_scanner) > set THREADS <number_of_threads>  #
 msf6 auxiliary(scanner/http/backup_scanner) > set MIN_SIZE <minimum_file_size_in_bytes>  # Default is 5000
 
 
-### Run the Scanner
+Run the Scanner
 Once you have configured the options, run the module:
 
 msf6 auxiliary(scanner/http/backup_scanner) > run
 
-### Example Usage
+# Example Usage
 Here is an example of how to configure and run the module:
 
 
@@ -74,7 +74,7 @@ msf6 auxiliary(scanner/http/backup_scanner) > set USER_AGENT "Mozilla/5.0 (Windo
 msf6 auxiliary(scanner/http/backup_scanner) > run
 
 
-Output
+# Output
 
 Upon running the module, it will check each specified backup file on the given subdomains, outputting results for each request. Here are some example outputs:
 
