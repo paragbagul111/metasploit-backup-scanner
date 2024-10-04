@@ -76,11 +76,15 @@ msf6 auxiliary(scanner/http/backup_scanner) > run
 
 
 Output
+
 Upon running the module, it will check each specified backup file on the given subdomains, outputting results for each request. Here are some example outputs:
 
 [*] Checking http://example.com:70/backup.zip ...
+
 [-] No Response: http://example.com:70/backup.zip
+
 [*] Checking http://example.com:70/backup.sql ...
+
 [+] Found valid backup file: http://example.com:70/backup.sql (Status: 200, Size: 37453 bytes, MIME: application/sql)
 
 
