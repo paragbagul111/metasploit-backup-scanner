@@ -28,6 +28,8 @@ To use the module, start Metasploit and load the module as follows:
 
 msf6 > use auxiliary/scanner/http/backup_scanner
 
+![Alt text]([https://github.com/username/repository/raw/main/path/to/image.png](https://github.com/paragbagul111/metasploit-backup-scanner/blob/main/use_requirement.png))
+
 Set Required Options
 
 You need to set various options to configure the module:
