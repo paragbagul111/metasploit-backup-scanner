@@ -49,7 +49,6 @@ msf6 auxiliary(scanner/http/backup_scanner) > set THREADS <number_of_threads>  #
 
 msf6 auxiliary(scanner/http/backup_scanner) > set MIN_SIZE <minimum_file_size_in_bytes>  # Default is 5000
 
-'''
 
 ### Run the Scanner
 Once you have configured the options, run the module:
