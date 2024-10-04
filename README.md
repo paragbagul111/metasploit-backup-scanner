@@ -28,7 +28,8 @@ To use the module, start Metasploit and load the module as follows:
 
 msf6 > use auxiliary/scanner/http/backup_scanner
 
-![Alt text]([https://github.com/username/repository/raw/main/path/to/image.png](https://github.com/paragbagul111/metasploit-backup-scanner/blob/main/use_requirement.png))
+![Usage Requirements](use_requirement.png)
+
 
 Set Required Options
 
@@ -89,6 +90,6 @@ Upon running the module, it will check each specified backup file on the given s
 [+] Found valid backup file: http://example.com:70/backup.sql (Status: 200, Size: 37453 bytes, MIME: application/sql)
 
 
-
+![Usage Requirements](backup_detection_evidence.png)
 
 
