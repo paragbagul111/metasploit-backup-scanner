@@ -32,30 +32,46 @@ Set Required Options
 
 You need to set various options to configure the module:
 
+
 msf6 auxiliary(scanner/http/backup_scanner) > set RHOSTS <target_subdomain_or_ip>
+
 msf6 auxiliary(scanner/http/backup_scanner) > set RPORT <target_port>  # Default is 80
+
 msf6 auxiliary(scanner/http/backup_scanner) > set DOMAIN_LIST <path_to_subdomain_file>
+
 msf6 auxiliary(scanner/http/backup_scanner) > set WORDLIST <path_to_backup_file_names>
+
 msf6 auxiliary(scanner/http/backup_scanner) > set USER_AGENT "<your_custom_user_agent>"  # Optional
+
 msf6 auxiliary(scanner/http/backup_scanner) > set SSL <true|false>  # Optional
+
 msf6 auxiliary(scanner/http/backup_scanner) > set THREADS <number_of_threads>  # Default is 10
+
 msf6 auxiliary(scanner/http/backup_scanner) > set MIN_SIZE <minimum_file_size_in_bytes>  # Default is 5000
 
+'''
 
-Run the Scanner
+### Run the Scanner
 Once you have configured the options, run the module:
 
 msf6 auxiliary(scanner/http/backup_scanner) > run
 
-Example Usage
+### Example Usage
 Here is an example of how to configure and run the module:
 
+
 msf6 > use auxiliary/scanner/http/backup_scanner
+
 msf6 auxiliary(scanner/http/backup_scanner) > set RHOSTS localhost
+
 msf6 auxiliary(scanner/http/backup_scanner) > set RPORT 70
+
 msf6 auxiliary(scanner/http/backup_scanner) > set DOMAIN_LIST /home/parag/responsible/sublist.txt
+
 msf6 auxiliary(scanner/http/backup_scanner) > set WORDLIST /home/parag/responsible/wordlist.txt
+
 msf6 auxiliary(scanner/http/backup_scanner) > set USER_AGENT "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+
 msf6 auxiliary(scanner/http/backup_scanner) > run
 
 
@@ -66,7 +82,6 @@ Upon running the module, it will check each specified backup file on the given s
 [-] No Response: http://example.com:70/backup.zip
 [*] Checking http://example.com:70/backup.sql ...
 [+] Found valid backup file: http://example.com:70/backup.sql (Status: 200, Size: 37453 bytes, MIME: application/sql)
-
 
 
 
