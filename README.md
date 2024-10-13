@@ -12,7 +12,7 @@ To use this module, clone the repository and place the module in the appropriate
 
 Clone the Repository:
 
-git clone https://github.com/yourusername/metasploit-backup-scanner.git
+https://github.com/paragbagul111/metasploit-backup-scanner.git
 
 Move the Module: Place the Ruby file into the Metasploit auxiliary directory:
 
